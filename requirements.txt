@@ -8,4 +8,4 @@ beautifulsoup4
 python-dotenv
 langchain==0.1.1
 python-dotenv
-openai --upgrade
+openai
