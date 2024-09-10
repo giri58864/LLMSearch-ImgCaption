@@ -193,12 +193,10 @@ def LLMSearch():
     # Refined Query results
         st.subheader("Refined Query Semantic search results : ")
 
+        st.markdown(f"Refined Query: {refined_query}")
         
         st.markdown(f"{message}\n\n")
 
-
-        
-        st.markdown(f"Refined Query: {refined_query}")
 
         distances, indices = semantic_search(refined_query, k=3)
         top_products = df.iloc[indices[0]]
